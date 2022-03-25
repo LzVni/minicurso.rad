@@ -6,12 +6,34 @@
 
 ## Environment setup
 
+Instale o git utilizando o seguinte link:
+- https://git-scm.com/
+
+Instale o Python utilizando o seguinte link:
+- https://docs.conda.io/en/latest/miniconda.html
+
+Para utilizar o profile do miniconda
+- Ir em configurações padrões (>Preferences: Open default settings (JSON)) e procurar por profiles.windows
+- Copiar o trecho dos profiles do **Command Prompt**
+- Colar o trecho do profiles nas configurações "pessoais" ('>Preferences: Open default settings (JSON)')
+- Modificar o nome do profile para **Command Prompt (Anaconda)** através do comando `Terminal: Select default Profile `
+
 Git (**TODO**)
 Python (**TODO**)
 
 ## Python setup
 
-Python venv **TODO**
+Para definir um virtual enviroment para os pacotes do Python é necessário rodar esses comandos
+````bat
+python -m venv venv
+.\venv\Scripts\activate
+````
+
+Para fazer as instalações dos pacotes, vamos utilizar os seguintes comandos:
+````bat
+pip install -r dev-requirements.txt
+
+````
 
 ## Jupyter setup
 
